@@ -1,3 +1,104 @@
+# 책 부록 소스 프로젝트 입니다
+
+- 직무 교육( OJT, On the job Training )을 위해서 생성.  
+- 진행중( WIP, Work on Progress ).  
+  + ...
+
+
+## 책 관련 링크  
+
+<img src="https://content.packt.com/_/image/original/B09431/cover_image.jpg" alt="" height="256px" align="right">
+
+
+- [Tkinter GUI Application Development Blueprints, Second Edition [ 원서 ]](https://www.packtpub.com/en-us/product/tkinter-gui-application-development-blueprints-second-edition-9781788834452)  
+
+
+- [Tkinter GUI Application Development Blueprints, Second Edition [ 번역서, 없음 ]](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=139236068)  
+
+
+## 개발 환경 구축
+
+- 파이썬 ( Python 3.12 )  
+
+  - [Python Download](https://www.python.org/downloads/)  
+    - [v3.12.0 for Windows](https://www.python.org/ftp/python/3.12.0/python-3.12.0-amd64.exe)  
+    - [v3.11.9 for Windows](https://www.python.org/ftp/python/3.11.9/python-3.11.9-amd64.exe)  
+
+- ...  
+
+
+## 의존 패키지
+
+```
+$ (.venv) pip install ipykernel numpy matplotlib scipy
+```
+
+- numpy
+  - [pypi](https://pypi.org/project/numpy/)  
+    ```
+    $ (.venv) pip install numpy
+    ```
+  - Fundamental Package for Array Computing in Python
+
+- matplotlib
+  - [pypi](https://pypi.org/project/matplotlib/)  
+    ```
+    $ (.venv) pip install matplotlib
+    ```
+  - Python Plotting Package
+
+- scipy  
+  - [pypi](https://pypi.org/project/scipy/)  
+    ```
+    $ (.venv) pip install scipy
+    ```
+  - Fundamental algorithms for scientific computing in Python
+
+- scikit-learn
+  - [pypi](https://pypi.org/project/scikit-learn/)  
+    ```
+    $ (.venv) pip install matplotlib
+    ```
+  - A set of python modules for machine learning and data mining
+
+- ipykernel
+  - [pypi](https://pypi.org/project/ipykernel/)  
+    ```
+    $ (.venv) pip install ipykernel
+    ```
+  - [ipykernel](https://github.com/ipython/ipykernel)  
+  - IPython Kernel for Jupyter
+
+- PyTorch
+  - [pypi](https://pypi.org/project/torch/)  
+    ```
+    $ (.venv) pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+    ```
+  - [PyTorch](https://pytorch.org/)  
+  - Tensors and Dynamic neural networks in Python with strong GPU acceleration
+  - nvidia-smi v531.15
+  - cuda-toolkit v12.8
+
+- ...
+  - [pypi]()  
+    ```
+    $ (.venv) pip install ...
+    ```
+  - [...]()
+  - ...  
+
+
+## 기타
+
+- ...  
+
+- ...  
+
+
+
+---
+---
+---
 
 
 

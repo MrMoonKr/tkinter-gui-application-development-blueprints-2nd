@@ -5,6 +5,11 @@ Tkinter GUI Application Development Blueprints
 """
 
 import tkinter as tk
+from pathlib import Path
+
+
+def get_fullpath( asset_name: str ):
+    return Path(__file__).resolve().parent / asset_name
 
 root = tk.Tk()
 root.title('I am a Top Level Widget, parent to other widgets')
@@ -67,7 +72,8 @@ tk.OptionMenu(my_frame_1, '', "Option A", "Option B", "Option C").pack()
 
 #adding my_image image
 tk.Label(my_frame_1, text='Image Fun with Bitmap Class:').pack()
-my_image = tk.BitmapImage(file="gir.xbm")
+gir = get_fullpath("gir.xbm")
+my_image = tk.BitmapImage(file=gir)
 my_label = tk.Label(my_frame_1, image=my_image)
 my_label.image = my_image  # keep a reference!
 my_label.pack()
@@ -85,7 +91,8 @@ my_frame_2.pack(side=tk.RIGHT)
 #add Photimage Class Widget to my_frame_2
 tk.Label(
     my_frame_2, text='Image displayed with \nPhotoImage class widget:').pack()
-dance_photo = tk.PhotoImage(file='dance.gif')
+dance = get_fullpath("dance.gif")
+dance_photo = tk.PhotoImage(file=dance)
 dance_photo_label = tk.Label(my_frame_2, image=dance_photo)
 dance_photo_label.image = dance_photo
 dance_photo_label.pack()
@@ -125,7 +132,8 @@ my_frame_3 = tk.Frame(root, bd=2, relief=tk.SUNKEN)
 
 #text widget and associated tk.Scrollbar widget
 my_text = tk.Text(my_frame_3, height=10, width=40)
-file_object = open('textcontent.txt')
+textcontent = get_fullpath("textcontent.txt")
+file_object = open(textcontent)
 file_content = file_object.read()
 file_object.close()
 my_text.insert(tk.END, file_content)
